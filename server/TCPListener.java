@@ -46,7 +46,7 @@ public class TCPListener extends Thread {
 	
 	public static void sendTCP(String message) {
 		try {
-			Socket socket = new Socket("192.168.2.64", 7801);//("10.140.51.33", 7801);
+			Socket socket = new Socket("***.***.***.***", 7801);
 			PrintWriter out = new PrintWriter(socket.getOutputStream());
 			System.out.println("SENDING: " + message);
 			out.write(message);
