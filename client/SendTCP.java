@@ -21,7 +21,7 @@ public class SendTCP extends AsyncTask<String, Void, Void> {
         String message = voids[0];
 
         try {
-            socket = new Socket("192.168.2.70", 80);//("10.140.52.67", 80); //
+            socket = new Socket("***.***.***.***", 80);
             printWriter = new PrintWriter(socket.getOutputStream());
             printWriter.write(message);
             printWriter.flush();
