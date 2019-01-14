@@ -33,7 +33,7 @@ public class WebServer {
 	}
 	
 	public void sendTCP(String message) throws IOException {
-		Socket socket = new Socket("192.168.2.64", 7801);
+		Socket socket = new Socket("***.***.***.***", 7801);
 		PrintWriter out = new PrintWriter(socket.getOutputStream());
 		System.out.println("SENDING: " + message);
 		out.write(message);
